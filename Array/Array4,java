@@ -1,0 +1,32 @@
+//Q4. Write a Java program to display even & odd index values from an array.
+import java.util.Scanner;
+
+class Array4
+{
+    public static void main(String []args)
+    {
+        int a[]=new int[6];
+        int sum=0;
+        Scanner sc =new Scanner(System.in);
+        System.out.println("Enter elements of array");
+        for(int i=0;i<a.length;i++)
+        {
+            a[i]=sc.nextInt();
+        }
+        
+        System.out.printf("Values at Even Index = ");
+        for(int i=0;i<a.length;i++)
+        {
+        if(i%2==0)
+        
+        System.out.printf(a[i]+" ");
+        }
+        System.out.println("");
+        System.out.printf("Values at Odd Index = ");
+        for(int i=0;i<a.length;i++)
+        {
+        if(i%2!=0)
+        System.out.printf(a[i]+" ");
+        }
+    }
+}
