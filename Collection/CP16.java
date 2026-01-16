@@ -1,0 +1,30 @@
+import java.util.ArrayList;
+
+class cp16 {
+    public static void main(String[] args) {
+
+        ArrayList<Integer> list = new ArrayList<>();
+
+        list.add(4);
+        list.add(5);
+        list.add(1);
+        list.add(2);
+        list.add(0);
+        list.add(4);
+
+        for (int i = 0; i < list.size(); i++) {
+            int count = 0;
+
+            for (int j = 0; j < list.size(); j++) {
+                if (list.get(i).equals(list.get(j))) {
+                    count++;
+                }
+            }
+
+            if (count == 1) {
+                System.out.println("Output: " + list.get(i));
+                break;
+            }
+        }
+    }
+}
